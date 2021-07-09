@@ -22,6 +22,9 @@ This is entirely possible and the Ledger app is ready for it. However, it requir
 
 I was very excited about the possibilities of realtime performance in Resolume and I think that Unity has the quality we should expect in 2021. However, after a lot of testing and thinking, I've realised that Resolume is not the right environment for what I want to do. As a very basic example, let's say I have three clips of the included example prepared in Resolume, each with a different animation. After changing color on one of them, I cannot have that change reflected in the other two clips. Because of how parameters work in Resolume, switching to the other clips will always revert the color back to the value it was when the preset or clip was made. This lack of 'horizontal control' means I cannot perform the way I would like and it's a dealbreaker for me. So with Resolume a dead end, I'm going to focus my energy on making realtime performance work some other way. However, I completely understand this stuff is still lots of fun and opens up possiblities other than VJ'ing, so I'm sharing the progress I was able to make with the community.
 
+
+## License
+
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 This work is licensed under a
