@@ -11,7 +11,7 @@
 * From the Assets/Hybrid/ResoLink folder, apply the ResoLinkSetup.cs script anywhere in your Unity scene. This script does all the setup for running your project in windowless mode and communcating with the plugin.
 * From the Assets/Hybrid/Param folder, create your interaction using the Param class. The different Param types can be created like you would a regular primitive variable, ie your script would use `public ParamFloat myFloat;` instead of `public float myFloat;`. You can then use either `myFloat.GetValue()` in Unity's Update call, or you can assign a UnityEvent method to be triggered via the inspector under the Advanced options.
 * Resolume will recognise ParamFloat as an unranged int, ParamRange as a ranged float, ParamEvent as an event button, ParamBool as a toggle and ParamColor as a color.
-* Build your project, again making sure the build folder is set to Desktop/Build. After running once, the plugin will then control this project.
+* Build your project, again making sure the build folder is set to Desktop/Build. After running once, the plugin will then control the new project.
 
 
 ## What about running different Unity projects side by side?
