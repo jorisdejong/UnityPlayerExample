@@ -1,6 +1,10 @@
+## What is this?
+
+UnityPlayerExample is an example project showcasing my Unity player for Resolume. It consists of a library of classes that let you create controls for your Unity projects and a plugin to display your projects and control these parameters live in Resolume. Although the example project uses Spout and OSC to communicate between Resolume and your Unity project, it's all automated. Aside from using the parameter classes, no additional setup is required.
+
 ## How to get the example project up and running:
 
-* From the Assets/Hybrid/Software folder, run HybridLedgerSetup.exe. This will install the HybridLedger system tray app and the FFGLHybridUnityPlayer.dll in Resolume's effects folder. HybridLedger is started whenever you use the plugin in Resolume and handles the communication between instances of the plugin and Unity executables. It runs in the background and doesn't need any setup. If you want, you can open it from the system tray to get feedback on what is happening under the hood.
+* From the Assets/Hybrid/Software folder, run HybridLedgerSetup.exe. This will install the HybridLedger system tray app and the FFGLHybridUnityPlayer.dll in Resolume's effects folder. HybridLedger is started whenever you use the plugin in Resolume and handles the communication between multiple instances of the plugin and multiple Unity executables. It runs in the background and doesn't need any setup. If you want, you can open it from the system tray to get feedback on what is happening under the hood.
 * Build the Unity project, making sure the build folder is set to Desktop/Build. Let the scene run once as a fullscreen standalone build. This will ensure that the plugin knows what parameters to display. Once the build has run, you can close it.
 * Launch the plugin from Resolume's sources. After a few seconds, the output from your scene will be visible.
 
@@ -20,7 +24,7 @@ This is entirely possible and the Ledger app is ready for it. However, it requir
 
 ## Why is this open source?
 
-I was very excited about the possibilities of realtime performance in Resolume and I think that Unity has the quality we should expect in 2021. However, after a lot of testing and thinking, I've realised that Resolume is not the right environment for what I want to do. As a very basic example, let's say I have three clips of the included example prepared in Resolume, each with a different a different camera movement. After changing color on one of them, I cannot have that change reflected in the other two clips. Because of how parameters work in Resolume, switching to the other clips will always revert the color back to the value it had when the preset or clip was created. This lack of 'horizontal control' means I cannot perform the way I would like and it's a dealbreaker for me. So Resolume, although still great for video, is a dead end for me here and I'm going to focus my energy on making realtime performance work some other way. However, I completely understand this stuff is still lots of fun and opens up possiblities other than VJ'ing, so I'm sharing the progress I was able to make with the community.
+I was very excited about the possibilities of realtime 3D performance in Resolume and I think that Unity has the quality we should expect in 2021. However, after a lot of testing, trying and thinking, I've realised that Resolume is not the right environment for how I'd like to perform in realtime. The exact how and why goes beyond the scope of this readme, but Resolume, although still great for video, is a dead end for me here and I'm going to focus my energy on making my vision work some other way. However, I completely understand this stuff is still lots of fun and opens up possiblities other than my specific style of VJ'ing, so I'm sharing my progress with the community.
 
 
 ## License
